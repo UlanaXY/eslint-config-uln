@@ -1,0 +1,38 @@
+{
+  "name": "cw-internal-eslint_configuration",
+  "version": "1.2.1",
+  "description": "Recommended Common Wombat config for stylelint",
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "recommended"
+  ],
+  "author": "Common Wombat",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/CommonWombat_Team/cw-internal-eslint_configuration.git"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-stylelint": "^11.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^5.0.0"
+  },
+  "scripts": {
+    "lint:js": "eslint . --ignore-path .gitignore"
+
+  }
+}
