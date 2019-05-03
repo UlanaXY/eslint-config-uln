@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Recommended Common Wombat config for eslint",
   "keywords": [
-    "stylelint",
-    "stylelint-config",
+    "eselint",
+    "eslint-config",
     "recommended"
   ],
   "author": "Common Wombat",
