@@ -1,7 +1,7 @@
 {
-  "name": "cw-internal-eslint_configuration",
-  "version": "1.2.1",
-  "description": "Recommended Common Wombat config for stylelint",
+  "name": "eslint-config-cw",
+  "version": "1.0.0",
+  "description": "Recommended Common Wombat config for eslint",
   "keywords": [
     "stylelint",
     "stylelint-config",

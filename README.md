@@ -1,4 +1,4 @@
-# cw-internal-eslint_configuration
+# eslint-config-cw
 
 configuracja styplelinta
 
