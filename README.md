@@ -7,13 +7,13 @@ eslint-config-cw
      yarn
 
     ```bash
-    yarn add -D babel-eslint eslint https://gitlab.com/CommonWombat_Team/cw-internal-eslintConfigCw.git
+    yarn add -D babel-eslint eslint https://gitlab.com/CommonWombat_Team/Public-Projects/cw-internal-eslintConfigCw.git
     ```
 
     npm
 
     ```bash
-    npm install -D babel-eslint eslint https://gitlab.com/CommonWombat_Team/cw-internal-eslintConfigCw.git
+    npm install -D babel-eslint eslint https://gitlab.com/CommonWombat_Team/Public-Projects/cw-internal-eslintConfigCw.git
     ```
 2. update .eslintrc
     ```JSON
