@@ -1,27 +1,27 @@
 "use strict";
 
 module.exports = {
-  "parser": "babel-eslint",
-  "env": {
+  parser: "babel-eslint",
+  env: {
     "browser": true,
     "commonjs": true,
     "es6": true,
     "node": true
   },
-  "extends": [
+  extends: [
     "airbnb"
   ],
-  "parserOptions": {
+  parserOptions: {
     "ecmaVersion": 6,
     "ecmaFeatures": {
       "jsx": true
     },
     "sourceType": "module"
   },
-  "plugins": [
+  plugins: [
     "react"
   ],
-  "rules": {
+  rules: {
     "linebreak-style": 0,
     "func-names": [
       "error",
