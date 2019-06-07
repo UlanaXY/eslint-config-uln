@@ -87,7 +87,7 @@ module.exports = {
         "ignorePureComponents": false
       }
     ],
-	"import/prefer-default-export": "off",
+    "import/prefer-default-export": "off",
     "import/extensions": "off",
     "import/no-extraneous-dependencies": [
       "error",
