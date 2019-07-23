@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cw",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Recommended Common Wombat config for eslint",
   "keywords": [
     "eselint",
@@ -22,7 +22,8 @@
     "eslint-loader": "^2.1.2",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4"
+    "eslint-plugin-react": "^7.12.4",
+    "snyk": "^1.192.4"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
@@ -33,7 +34,9 @@
     "babel-eslint": "^10.0.0"
   },
   "scripts": {
-    "lint:js": "eslint . --ignore-path .gitignore"
-
-  }
+    "lint:js": "eslint . --ignore-path .gitignore",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
