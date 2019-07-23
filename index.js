@@ -56,6 +56,7 @@ module.exports = {
     "arrow-parens": "off",
     "no-trailing-spaces": "off",
     "no-control-regex": "off",
+    "no-use-before-define": ["error", { "functions": false, "classes": true }],
     "react/display-name": [
       "off"
     ],
