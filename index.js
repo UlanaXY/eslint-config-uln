@@ -94,6 +94,7 @@ module.exports = {
       "error",
       {
         "devDependencies": [
+          "cypress/**",
           ".storybook/**",
           "**/stories/**",
           "**/stories.js",
