@@ -36,7 +36,7 @@
   "scripts": {
     "lint:js": "eslint . --ignore-path .gitignore",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepare": "test -n \"$IS_CI\" || npm run snyk-protect"
   },
   "snyk": true
 }
