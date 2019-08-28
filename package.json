@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cw",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Recommended Common Wombat config for eslint",
   "keywords": [
     "eselint",
@@ -36,7 +36,7 @@
   "scripts": {
     "lint:js": "eslint . --ignore-path .gitignore",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepare": "test -n \"$IS_CI\" || npm run snyk-protect"
   },
   "snyk": true
 }
