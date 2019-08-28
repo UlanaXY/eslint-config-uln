@@ -65,8 +65,8 @@ module.exports = {
       "error",
       {
         "ignore": [
-          "t",
-          "i18n",
+          "t", // i18next
+          "i18n", // i18next
           "match", // react-router
           "navigation", // react-navigation
         ],
