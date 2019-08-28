@@ -67,7 +67,8 @@ module.exports = {
         "ignore": [
           "t",
           "i18n",
-          "match"
+          "match", // react-router
+          "navigation", // react-navigation
         ],
         "customValidators": []
       }
