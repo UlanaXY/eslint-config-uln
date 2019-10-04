@@ -60,6 +60,9 @@ module.exports = {
     "react/display-name": [
       "off"
     ],
+    "react/static-property-placement": ["error", "static public field"],
+    "react/jsx-props-no-spreading": "off",
+    "react/state-in-constructor": "off",
     "react/require-default-props": "error",
     "react/prop-types": [
       "error",

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cw",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Recommended Common Wombat config for eslint",
   "keywords": [
     "eselint",
@@ -18,25 +18,23 @@
     "index.js"
   ],
   "dependencies": {
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-loader": "^2.1.2",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4"
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^1.7.0"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-stylelint": "^11.0.0",
-    "snyk": "^1.197.0"
+    "eslint": "^6.5.1",
+    "eslint-config-stylelint": "^11.0.0"
   },
   "peerDependencies": {
-    "eslint": "^5.0.0",
-    "babel-eslint": "^10.0.0"
+    "babel-eslint": "^10.0.0",
+    "eslint": "^6.5.1"
   },
   "scripts": {
-    "lint:js": "eslint . --ignore-path .gitignore",
-    "snyk-protect": "snyk protect",
-    "prepare": "test -n \"$IS_CI\" || npm run snyk-protect"
+    "lint:js": "eslint . --ignore-path .gitignore"
   },
   "snyk": true
 }
