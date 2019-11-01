@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cw",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "description": "Recommended Common Wombat config for eslint",
   "keywords": [
     "eselint",
@@ -14,27 +14,37 @@
     "url": "https://gitlab.com/CommonWombat_Team/Public-Projects/cw-internal-eslintConfigCw.git"
   },
   "main": "index.js",
-  "files": [
-    "index.js"
-  ],
+  "scripts": {
+    "lint:js": "eslint index.js typescript.js --config .eslintrc.js",
+    "test:javascript": "eslint test/javascript/test.js --no-eslintrc --config test/javascript/.eslintrc.js",
+    "test:typescript": "eslint test/typescript/test.tsx --no-eslintrc --config test/typescript/.eslintrc.js"
+  },
   "dependencies": {
     "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-react-app": "^5.0.2",
     "eslint-loader": "^3.0.2",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "^1.7.0"
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-flowtype": "3.13.0"
   },
   "devDependencies": {
-    "eslint": "^6.5.1",
-    "eslint-config-stylelint": "^11.0.0"
+    "@types/react": "^16.8.23",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-stylelint": "^11.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.23",
+    "@typescript-eslint/eslint-plugin": "~2.2.0",
+    "@typescript-eslint/parser": "~2.2.0",
+    "typescript": "3.6.2"
   },
   "peerDependencies": {
     "babel-eslint": "^10.0.0",
-    "eslint": "^6.5.1"
-  },
-  "scripts": {
-    "lint:js": "eslint . --ignore-path .gitignore"
+    "eslint": "^6.6.0",
+    "@typescript-eslint/eslint-plugin": "~2.2.0",
+    "@typescript-eslint/parser": "~2.2.0"
   },
   "snyk": true
 }
