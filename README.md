@@ -16,10 +16,21 @@ eslint-config-cw
     npm install -D babel-eslint eslint https://gitlab.com/CommonWombat_Team/Public-Projects/cw-internal-eslintConfigCw.git
     ```
 2. update .eslintrc
+    * javascript:
     ```JSON
     {
       extends: [
         "cw"
+      ]
+      ...
+    };
+
+    ```
+    * typescript:
+    ```JSON
+    {
+      extends: [
+        "cw/typescript"
       ]
       ...
     };
