@@ -16,3 +16,16 @@ eslint:
   script:
     # Run eslint
     - yarn run lint:js
+
+
+test javascript:
+  stage: test
+
+  script:
+    - yarn run test:javascript
+
+test typeascript:
+  stage: test
+
+  script:
+    - yarn run test:typescript
