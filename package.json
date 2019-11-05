@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cw",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Recommended Common Wombat config for eslint",
   "keywords": [
     "eselint",
@@ -22,29 +22,30 @@
   "dependencies": {
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-react-app": "^5.0.2",
+    "eslint-import-resolver-alias": "^1.1.2",
     "eslint-loader": "^3.0.2",
+    "eslint-plugin-flowtype": "3.13.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "eslint-plugin-flowtype": "3.13.0"
+    "eslint-plugin-react-hooks": "^1.7.0"
   },
   "devDependencies": {
     "@types/react": "^16.8.23",
+    "@typescript-eslint/eslint-plugin": "2.2.x",
+    "@typescript-eslint/parser": "2.2.x",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.6.0",
     "eslint-config-stylelint": "^11.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.23",
-    "@typescript-eslint/eslint-plugin": "~2.2.0",
-    "@typescript-eslint/parser": "~2.2.0",
     "typescript": "3.6.2"
   },
   "peerDependencies": {
-    "babel-eslint": "^10.0.0",
-    "eslint": "^6.6.0",
     "@typescript-eslint/eslint-plugin": "~2.2.0",
-    "@typescript-eslint/parser": "~2.2.0"
+    "@typescript-eslint/parser": "~2.2.0",
+    "babel-eslint": "^10.0.0",
+    "eslint": "^6.6.0"
   },
   "snyk": true
 }
