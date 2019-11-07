@@ -22,4 +22,15 @@ module.exports = {
   plugins: [
     "react"
   ],
+  rules: {
+    "react/prop-types": [
+      "error",
+      {
+        "ignore": [
+          ...require.resolve("./ignoredProps.js")
+        ],
+        "customValidators": []
+      }
+    ],
+  }
 };

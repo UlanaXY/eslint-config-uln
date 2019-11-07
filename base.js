@@ -44,18 +44,6 @@ module.exports = {
     "react/jsx-props-no-spreading": "off",
     "react/state-in-constructor": "off",
     "react/require-default-props": "error",
-    "react/prop-types": [
-      "error",
-      {
-        "ignore": [
-          "t", // i18next
-          "i18n", // i18next
-          "match", // react-router
-          "navigation", // react-navigation
-        ],
-        "customValidators": []
-      }
-    ],
     "react/jsx-one-expression-per-line": ["error", { "allow": "literal" }],
     "react/jsx-filename-extension": [
       1,

@@ -12,7 +12,17 @@ module.exports = {
     "@typescript-eslint/no-angle-bracket-type-assertion": "off",
     "@typescript-eslint/consistent-type-assertions": "error",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
-    'no-use-before-define': ['error', { 'functions': true, 'classes': true }],
+    "no-use-before-define": ['error', { 'functions': true, 'classes': true }],
+    "react/prop-types": [
+      "error",
+      {
+        "ignore": [
+          ...require.resolve("./ignoredProps.js")
+        ],
+        "customValidators": [],
+        "skipUndeclared": true,
+      }
+    ],
   },
 };
 
