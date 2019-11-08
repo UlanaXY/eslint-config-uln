@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cw",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Recommended Common Wombat config for eslint",
   "keywords": [
     "eselint",
@@ -16,8 +16,8 @@
   "main": "index.js",
   "scripts": {
     "lint:js": "eslint index.js typescript.js --config .eslintrc.js",
-    "test:javascript": "eslint test/javascript/test.js --no-eslintrc --config test/javascript/.eslintrc.js",
-    "test:typescript": "eslint test/typescript/test.tsx --no-eslintrc --config test/typescript/.eslintrc.js"
+    "test:javascript": "eslint test/javascript --no-eslintrc --config test/javascript/.eslintrc.js",
+    "test:typescript": "eslint test/typescript --no-eslintrc --config test/typescript/.eslintrc.js"
   },
   "dependencies": {
     "eslint-config-airbnb": "^18.0.1",
