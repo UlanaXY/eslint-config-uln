@@ -22,14 +22,28 @@ module.exports = {
           }
         ],
       }
+    },
+    {
+      files: ['**/*.ts?(x)'],
+      rules: {
+        "@typescript-eslint/consistent-type-assertions": "error",
+        "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+        "@typescript-eslint/type-annotation-spacing": "error",
+        "@typescript-eslint/typedef": ["error", {
+          "variableDeclaration": false,
+          "parameter": true,
+          "arrowParameter": true,
+          "memberVariableDeclaration": false,
+          "objectDestructuring": false,
+          "arrayDestructuring": false,
+          "propertyDeclaration": false,
+        }],
+      }
     }
   ],
 
   rules: {
     "@typescript-eslint/no-angle-bracket-type-assertion": "off",
-    "@typescript-eslint/consistent-type-assertions": "error",
-    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
-    "@typescript-eslint/type-annotation-spacing": "error",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
     "react/prop-types": "error",
     "no-use-before-define": ['error', { 'functions': true, 'classes': true }]
