@@ -7,6 +7,13 @@ export interface ReactTableState {
   pages: number;
 }
 
+interface ResponseData {
+  data: object[]
+  page: number
+  totalPages: number
+  perPage: number
+}
+
 export interface IContext {
   data: object[],
   page: number,
@@ -78,7 +85,7 @@ class ServerSideTableContextProvider extends React.PureComponent<IProps, IState>
     };
 
     rawFetchData(body)
-      .then(responseData => {
+      .then((responseData: ResponseData) => {
         this.setState({
           data: responseData.data,
           // react-table indexes page from 0, but backend use indexing from 1
