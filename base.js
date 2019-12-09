@@ -35,8 +35,8 @@ module.exports = {
         "functions": "ignore"
       }
     ],
-    "no-return-assign": "off",
     "arrow-parens": "off",
+    "no-return-assign": "off",
     "no-trailing-spaces": "off",
     "no-control-regex": "off",
     "no-use-before-define": ["error", { "functions": false, "classes": true }],
