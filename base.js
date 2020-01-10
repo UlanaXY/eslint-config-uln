@@ -11,18 +11,18 @@ module.exports = {
       "never"
     ],
     "indent": [
-      "warn",
+      "error",
       2,
       {
         "SwitchCase": 1
       }
     ],
     "quotes": [
-      "warn",
+      "error",
       "single"
     ],
     "semi": [
-      "warn",
+      "error",
       "always"
     ],
     "comma-dangle": [
@@ -76,7 +76,7 @@ module.exports = {
     ],
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/anchor-is-valid": [
-      "warn",
+      "error",
       {
         "components": [
           "Link"
