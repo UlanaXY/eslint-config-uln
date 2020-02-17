@@ -4,35 +4,37 @@ eslint-config-cw
 ## Installation
 1. Installation
 
-     yarn
 
+    JavaScript
     ```bash
     yarn add -D babel-eslint eslint https://gitlab.com/CommonWombat_Team/Public-Projects/cw-internal-eslintConfigCw.git
+    # npm install -D babel-eslint eslint https://gitlab.com/CommonWombat_Team/Public-Projects/cw-internal-eslintConfigCw.git
     ```
 
-    npm
-
+    
+    TypeScript only 
     ```bash
-    npm install -D babel-eslint eslint https://gitlab.com/CommonWombat_Team/Public-Projects/cw-internal-eslintConfigCw.git
+    yarn add -D babel-eslint eslint @typescript-eslint/eslint-plugin@2.8.0 @typescript-eslint/parser@2.8.0 https://gitlab.com/CommonWombat_Team/Public-Projects/cw-internal-eslintConfigCw.git
+    # npm install -D babel-eslint eslint @typescript-eslint/eslint-plugin@2.8.0 @typescript-eslint/parser@2.8.0 https://gitlab.com/CommonWombat_Team/Public-Projects/cw-internal-eslintConfigCw.git
+
     ```
-2. update .eslintrc
+    
+2. create/update .eslintrc.js
     * javascript:
     ```JSON
     {
-      extends: [
+      "extends": [
         "cw"
       ]
-      ...
     };
 
     ```
     * typescript:
     ```JSON
     {
-      extends: [
+      "extends": [
         "cw/typescript"
       ]
-      ...
     };
 
     ```

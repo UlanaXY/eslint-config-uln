@@ -29,6 +29,7 @@ module.exports = {
         "@typescript-eslint/consistent-type-assertions": "error",
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "@typescript-eslint/type-annotation-spacing": "error",
+        "@typescript-eslint/no-explicit-any": "error",
         "@typescript-eslint/typedef": ["error", {
           "variableDeclaration": false,
           "parameter": true,
