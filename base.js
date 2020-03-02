@@ -25,6 +25,7 @@ module.exports = {
       "error",
       "always"
     ],
+    "camelcase": "off",
     "comma-dangle": [
       "error",
       {
