@@ -286,7 +286,7 @@ export default class CookiesConsent extends React.Component {
     const { translation, editSettingsMode } = this.props;
     const { showCookieBar, showConfigModal } = this.state;
 
-    const test_camel_case = "12";
+    const test_camel_case = '12';
 
     return (
       <>
