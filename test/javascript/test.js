@@ -297,7 +297,7 @@ export default class CookiesConsent extends React.Component {
               <div className="info">
                 {translation.cookieBar.infoText}
               </div>
-              div className="info">
+              <div className="info">
                 {test_camel_case}
               </div>
               <div className="buttons">
