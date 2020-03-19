@@ -33,7 +33,7 @@ module.exports = {
         "@typescript-eslint/typedef": ["error", {
           "variableDeclaration": false,
           "parameter": true,
-          "arrowParameter": true,
+          "arrowParameter": false,
           "memberVariableDeclaration": false,
           "objectDestructuring": false,
           "arrayDestructuring": false,
