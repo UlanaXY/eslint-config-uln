@@ -63,6 +63,7 @@ module.exports = {
     ],
     "import/prefer-default-export": "off",
     "import/extensions": "off",
+    "import/newline-after-import": ["error", { "count": 2 }],
     "import/no-extraneous-dependencies": [
       "error",
       {
