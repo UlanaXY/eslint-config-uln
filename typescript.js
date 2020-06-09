@@ -8,6 +8,9 @@ module.exports = {
   plugins: [
     "react-hooks",
   ],
+  parserOptions: {
+    project: './tsconfig.json',
+  },
   overrides: [
     {
       files: ['**/*.js?(x)'],

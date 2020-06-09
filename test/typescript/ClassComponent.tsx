@@ -4,16 +4,16 @@ import SimpleComponent from './SimpleComponent';
 
 
 export interface ReactTableState {
-  page: number;
-  pageSize: number;
-  pages: number;
+  page: number,
+  pageSize: number,
+  pages: number,
 }
 
 interface ResponseData {
-  data: object[]
-  page: number
-  totalPages: number
-  perPage: number
+  data: object[],
+  page: number,
+  totalPages: number,
+  perPage: number,
 }
 
 export interface IContext {
@@ -41,7 +41,7 @@ export const defaultContext = {
 const ServerSideTableContext = React.createContext<IContext>(defaultContext);
 
 interface IProps {
-  children: React.ReactNode
+  children: React.ReactNode,
   rawFetchData: (args: {
     page: number,
     perPage: number,
@@ -50,7 +50,7 @@ interface IProps {
     page: number,
     totalPages: number,
     perPage: number,
-  }>
+  }>,
 }
 
 interface IState extends IContext {}
