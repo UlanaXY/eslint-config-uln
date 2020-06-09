@@ -30,6 +30,17 @@ module.exports = {
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "@typescript-eslint/type-annotation-spacing": "error",
         "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/prefer-nullish-coalescing": "error",
+        "@typescript-eslint/member-delimiter-style":  ["error", {
+          "multiline": {
+            "delimiter": "comma",
+            "requireLast": true
+          },
+          "singleline": {
+            "delimiter": "comma",
+            "requireLast": false
+          }
+        }],
         "@typescript-eslint/typedef": ["error", {
           "variableDeclaration": false,
           "parameter": true,
