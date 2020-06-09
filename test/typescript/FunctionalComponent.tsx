@@ -3,7 +3,7 @@ import * as React from 'react';
 
 
 interface IProps {
-  children: React.ReactNode
+  children: React.ReactNode,
   page: number,
   pages: number,
   pageSize: number,
