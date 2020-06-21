@@ -41,6 +41,7 @@ module.exports = {
     "no-trailing-spaces": "off",
     "no-control-regex": "off",
     "no-use-before-define": ["error", { "functions": false, "classes": true }],
+    "no-multiple-empty-lines": ["error", { "max": 2 }],
     "react/static-property-placement": ["error", "static public field"],
     "react/jsx-props-no-spreading": "off",
     "react/state-in-constructor": "off",
