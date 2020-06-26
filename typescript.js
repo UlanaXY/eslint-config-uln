@@ -59,7 +59,7 @@ module.exports = {
 
   rules: {
     "@typescript-eslint/no-angle-bracket-type-assertion": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx", ".tsx"] }],
     "react/prop-types": "error",
     "no-use-before-define": ['error', { 'functions': true, 'classes': true }]
   },
