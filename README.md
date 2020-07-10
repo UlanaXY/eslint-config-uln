@@ -21,8 +21,8 @@ eslint-config-cw
     
 2. create/update .eslintrc.js
     * javascript:
-    ```JSON
-    {
+    ```JS
+    module.exports = {
       "extends": [
         "cw"
       ]
@@ -30,8 +30,8 @@ eslint-config-cw
 
     ```
     * typescript:
-    ```JSON
-    {
+    ```JS
+    module.exports = {
       "extends": [
         "cw/typescript"
       ]
