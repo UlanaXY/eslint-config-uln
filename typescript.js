@@ -26,6 +26,7 @@ module.exports = {
     {
       files: ['**/*.ts?(x)'],
       rules: {
+        "no-unused-vars": "off",
         "@typescript-eslint/consistent-type-assertions": "error",
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "@typescript-eslint/type-annotation-spacing": "error",
