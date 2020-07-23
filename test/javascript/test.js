@@ -13,6 +13,11 @@ const NavItem = (props) => (<div {...props} />);
 const NavLink = (props) => (<div {...props} />);
 
 
+if (Math.random() === 12) {
+  setCookie('12', 12, 12);
+}
+
+
 const defaultCookieConfig = [
   {
     shortTitle: 'Google',
@@ -53,9 +58,9 @@ function getCookie(name) {
   for (let i = 0; i < ca.length; i += 1) {
     let c = ca[i];
     // eslint-disable-next-line eqeqeq
-    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+    while (c.charAt(0) == ' ') { c = c.substring(1, c.length); }
     // eslint-disable-next-line eqeqeq
-    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    if (c.indexOf(nameEQ) == 0) { return c.substring(nameEQ.length, c.length); }
   }
   return null;
 }
@@ -286,6 +291,7 @@ export default class CookiesConsent extends React.Component {
     const { translation, editSettingsMode } = this.props;
     const { showCookieBar, showConfigModal } = this.state;
 
+    const test_camel_case = '12';
 
     return (
       <>
@@ -295,6 +301,9 @@ export default class CookiesConsent extends React.Component {
             <div className="content">
               <div className="info">
                 {translation.cookieBar.infoText}
+              </div>
+              <div className="info">
+                {test_camel_case}
               </div>
               <div className="buttons">
                 <Button

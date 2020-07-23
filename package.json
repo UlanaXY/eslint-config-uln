@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cw",
-  "version": "2.8.1",
+  "version": "2.14.1",
   "description": "Recommended Common Wombat config for eslint",
   "keywords": [
     "eselint",
@@ -17,33 +17,37 @@
   "scripts": {
     "lint:js": "eslint index.js typescript.js --config .eslintrc.js",
     "test:javascript": "eslint test/javascript --ext .js,.jsx --no-eslintrc --config test/javascript/.eslintrc.js",
-    "test:typescript": "eslint test/typescript --ext .js,.jsx,.ts,.tsx --no-eslintrc --config test/typescript/.eslintrc.js"
+    "test:typescript": "eslint test/typescript --ext .js,.jsx,.ts,.tsx --no-eslintrc --config test/typescript/.eslintrc.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "test -n \"$IS_CI\" || yarn run snyk-protect"
   },
   "dependencies": {
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-react-app": "^5.1.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-react-app": "^5.2.1",
     "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-loader": "3.0.2",
-    "eslint-plugin-flowtype": "3.13.0",
-    "eslint-plugin-import": "2.18.2",
+    "eslint-loader": "^3.0.4",
+    "eslint-plugin-flowtype": "4.6.0",
+    "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "6.2.3",
-    "eslint-plugin-react": "7.16.0",
-    "eslint-plugin-react-hooks": "^1.6.1"
+    "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "snyk": "^1.319.0"
   },
   "devDependencies": {
-    "@types/react": "^16.8.23",
-    "@typescript-eslint/eslint-plugin": "2.8.0",
-    "@typescript-eslint/parser": "2.8.0",
+    "@types/react": "^16.9.35",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
     "babel-eslint": "^10.0.3",
-    "eslint": "^6.6.0",
+    "eslint": "^6.8.0",
     "eslint-config-stylelint": "^11.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.23",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "webpack": "^4.43.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "2.8.0",
-    "@typescript-eslint/parser": "2.8.0",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
     "babel-eslint": "~10.0.3",
     "eslint": "^6.6.0"
   },

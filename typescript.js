@@ -8,6 +8,9 @@ module.exports = {
   plugins: [
     "react-hooks",
   ],
+  parserOptions: {
+    project: './tsconfig.json',
+  },
   overrides: [
     {
       files: ['**/*.js?(x)'],
@@ -31,10 +34,21 @@ module.exports = {
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "@typescript-eslint/type-annotation-spacing": "error",
         "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/prefer-nullish-coalescing": "error",
+        "@typescript-eslint/member-delimiter-style":  ["error", {
+          "multiline": {
+            "delimiter": "comma",
+            "requireLast": true
+          },
+          "singleline": {
+            "delimiter": "comma",
+            "requireLast": false
+          }
+        }],
         "@typescript-eslint/typedef": ["error", {
           "variableDeclaration": false,
           "parameter": true,
-          "arrowParameter": true,
+          "arrowParameter": false,
           "memberVariableDeclaration": false,
           "objectDestructuring": false,
           "arrayDestructuring": false,
@@ -46,7 +60,7 @@ module.exports = {
 
   rules: {
     "@typescript-eslint/no-angle-bracket-type-assertion": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx", ".tsx"] }],
     "react/prop-types": "error",
     "no-use-before-define": ['error', { 'functions': true, 'classes': true }]
   },

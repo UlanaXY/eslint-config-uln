@@ -32,5 +32,6 @@ module.exports = {
         "customValidators": []
       }
     ],
+    "react/jsx-filename-extension": [ "warn", { "extensions": [".js", ".jsx"] }],
   }
 };
