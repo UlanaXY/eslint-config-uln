@@ -24,7 +24,7 @@ eslint-config-wombat
     ```JS
     module.exports = {
       "extends": [
-        "cw"
+        "wombat"
       ]
     };
 
@@ -33,7 +33,7 @@ eslint-config-wombat
     ```JS
     module.exports = {
       "extends": [
-        "cw/typescript"
+        "wombat/typescript"
       ]
     };
 
