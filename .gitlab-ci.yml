@@ -8,33 +8,29 @@ before_script:
   - yarn install
 
 stages:
-  - test
+#  - test
   - publish
-
-eslint:
-  stage: test
-
-  script:
-    # Run eslint
-    - yarn run lint:js
-
-
-test javascript:
-  stage: test
-
-  script:
-    - yarn run test:javascript
-
-test typeascript:
-  stage: test
-
-  script:
-    - yarn run test:typescript
+#
+#eslint:
+#  stage: test
+#
+#  script:
+#    # Run eslint
+#    - yarn run lint:js
+#
+#test:
+#  stage: test
+#
+#  script:
+#    - yarn run test:javascript
+#    - yarn run test:typescript
 
 publish:
   stage: publish
 
   script:
-    - PACKAGE_VERSION==$(node -pe "require('./package.json').version")
+    - PACKAGE_VERSION=$(node -pe "require('./package.json').version")
     - echo $PACKAGE_VERSION
-    - np $PACKAGE_VERSION --preview
+    - yarn np $PACKAGE_VERSION --preview
+  only:
+    - master
