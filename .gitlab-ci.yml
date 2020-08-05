@@ -35,4 +35,3 @@ publish:
     - yarn np $PACKAGE_VERSION --preview
   only:
     - master
-
