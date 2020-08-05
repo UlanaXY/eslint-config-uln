@@ -8,31 +8,18 @@ before_script:
   - yarn install
 
 stages:
-#  - test
-  - publish
-#
-#eslint:
-#  stage: test
-#
-#  script:
-#    # Run eslint
-#    - yarn run lint:js
-#
-#test:
-#  stage: test
-#
-#  script:
-#    - yarn run test:javascript
-#    - yarn run test:typescript
+  - test
 
-publish:
-  stage: publish
+eslint:
+  stage: test
 
   script:
-    - npm config set //registry.yarnpkg.com/:_authToken $NPM_TOKEN
-    - PACKAGE_VERSION=$(node -pe "require('./package.json').version")
-    - echo $PACKAGE_VERSION
-    - yarn np $PACKAGE_VERSION --skip-2fa
-  only:
-    - master
+    # Run eslint
+    - yarn run lint:js
 
+test:
+  stage: test
+
+  script:
+    - yarn run test:javascript
+    - yarn run test:typescript
