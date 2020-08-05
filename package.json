@@ -18,7 +18,7 @@
     "lint:js": "eslint index.js typescript.js --config .eslintrc.js",
     "test:javascript": "eslint test/javascript --ext .js,.jsx --no-eslintrc --config test/javascript/.eslintrc.js",
     "test:typescript": "eslint test/typescript --ext .js,.jsx,.ts,.tsx --no-eslintrc --config test/typescript/.eslintrc.js",
-    "publish": "np --skip-2fa",
+    "createNewVersion": "np --skip-2fa",
     "snyk-protect": "snyk protect",
     "prepare": "test -n \"$IS_CI\" || yarn run snyk-protect"
   },

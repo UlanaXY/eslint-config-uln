@@ -1,4 +1,4 @@
-eslint-config-cw
+eslint-config-wombat
 ================
 
 ## Installation
@@ -7,15 +7,15 @@ eslint-config-cw
 
     JavaScript
     ```bash
-    yarn add -D babel-eslint eslint https://gitlab.com/CommonWombat_Team/Public-Projects/cw-internal-eslintConfigCw.git
-    # npm install -D babel-eslint eslint https://gitlab.com/CommonWombat_Team/Public-Projects/cw-internal-eslintConfigCw.git
+    yarn add -D babel-eslint eslint eslint-config-wombat
+    # npm install -D babel-eslint eslint eslint-config-wombat
     ```
 
     
     TypeScript only 
     ```bash
-    yarn add -D babel-eslint eslint @typescript-eslint/eslint-plugin@2.8.0 @typescript-eslint/parser@2.8.0 https://gitlab.com/CommonWombat_Team/Public-Projects/cw-internal-eslintConfigCw.git
-    # npm install -D babel-eslint eslint @typescript-eslint/eslint-plugin@2.8.0 @typescript-eslint/parser@2.8.0 https://gitlab.com/CommonWombat_Team/Public-Projects/cw-internal-eslintConfigCw.git
+    yarn add -D babel-eslint eslint @typescript-eslint/eslint-plugin@2.8.0 @typescript-eslint/parser@2.8.0 eslint-config-wombat
+    # npm install -D babel-eslint eslint @typescript-eslint/eslint-plugin@2.8.0 @typescript-eslint/parser@2.8.0 eslint-config-wombat
 
     ```
     
