@@ -32,7 +32,7 @@ publish:
     - npm config set //registry.yarnpkg.com/:_authToken $NPM_TOKEN
     - PACKAGE_VERSION=$(node -pe "require('./package.json').version")
     - echo $PACKAGE_VERSION
-    - yarn np $PACKAGE_VERSION --preview
+    - yarn np $PACKAGE_VERSION --skip-2fa
   only:
     - master
 

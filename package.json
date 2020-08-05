@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cw",
-  "version": "2.14.3",
+  "version": "2.14.4",
   "description": "Recommended Common Wombat config for eslint",
   "keywords": [
     "eselint",
