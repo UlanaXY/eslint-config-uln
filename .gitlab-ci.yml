@@ -9,6 +9,7 @@ before_script:
 
 stages:
   - test
+  - publish
 
 eslint:
   stage: test
@@ -29,3 +30,11 @@ test typeascript:
 
   script:
     - yarn run test:typescript
+
+publish:
+  stage: publish
+
+  script:
+    - PACKAGE_VERSION==$(node -pe "require('./package.json').version")
+    - echo $PACKAGE_VERSION
+    - np $PACKAGE_VERSION --preview
