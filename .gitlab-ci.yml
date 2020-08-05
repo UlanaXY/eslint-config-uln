@@ -31,6 +31,8 @@ publish:
   script:
     - PACKAGE_VERSION=$(node -pe "require('./package.json').version")
     - echo $PACKAGE_VERSION
+    - echo ${NPM_TOKEN}
+    - echo $NPM_TOKEN
     - yarn np $PACKAGE_VERSION --preview
   only:
     - master
