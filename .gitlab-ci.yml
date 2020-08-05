@@ -29,7 +29,7 @@ publish:
   stage: publish
 
   script:
-    - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+    - npm config set //registry.npmjs.org/:_authToken d85fdf8a-f9c9-4b0b-a196-68e01f453f04
     - PACKAGE_VERSION=$(node -pe "require('./package.json').version")
     - echo $PACKAGE_VERSION
     - yarn np $PACKAGE_VERSION --preview
