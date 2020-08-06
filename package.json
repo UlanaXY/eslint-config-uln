@@ -31,7 +31,8 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-react": "7.19.0",
-    "eslint-plugin-react-hooks": "^2.5.0"
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "np": "^6.3.2"
   },
   "devDependencies": {
     "@types/react": "^16.9.35",
@@ -43,7 +44,7 @@
     "np": "^6.3.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.23",
-    "snyk": "^1.319.0",
+    "snyk": "^1.369.3",
     "typescript": "~3.7.2",
     "webpack": "^4.43.0"
   },

@@ -1,4 +1,9 @@
-image: node:10.16.0
+variables:
+  #fallback value overwritten by CI variable
+  NODE_CI_IMAGE: "node:12.16.3"
+
+image: $NODE_CI_IMAGE
+
 
 cache:
   paths:
