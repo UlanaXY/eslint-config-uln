@@ -4,19 +4,16 @@ eslint-config-wombat
 ## Installation
 1. Installation
 
-
-    JavaScript
-    ```bash
-    yarn add -D babel-eslint eslint eslint-config-wombat
-    # npm install -D babel-eslint eslint eslint-config-wombat
-    ```
-
-    
     TypeScript only 
     ```bash
-    yarn add -D babel-eslint eslint @typescript-eslint/eslint-plugin@2.8.0 @typescript-eslint/parser@2.8.0 eslint-config-wombat
-    # npm install -D babel-eslint eslint @typescript-eslint/eslint-plugin@2.8.0 @typescript-eslint/parser@2.8.0 eslint-config-wombat
-
+    yarn add -D babel-eslint eslint@^6.6.0 @typescript-eslint/eslint-plugin@^3.9.0 @typescript-eslint/parser^3.9.0 eslint-config-wombat
+    # npm install -D babel-eslint eslint@^6.6.0 @typescript-eslint/eslint-plugin@^3.9.0 @typescript-eslint/parser@^3.9.0 eslint-config-wombat
+    ```
+    
+    JavaScript
+    ```bash
+    yarn add -D babel-eslint eslint@^6.6.0 eslint-config-wombat
+    # npm install -D babel-eslint eslint@^6.6.0 eslint-config-wombat
     ```
     
 2. create/update .eslintrc.js
