@@ -7,7 +7,7 @@ interface IProps {
   page: number,
   pages: number,
   pageSize: number,
-  isLoadingData: boolean,
+  isLoadingData?: boolean,
 }
 
 
@@ -16,7 +16,7 @@ export function StandardFunctionalComponent({
   page,
   pages,
   pageSize,
-  isLoadingData,
+  isLoadingData = true,
 }: IProps) {
   return (
     <div>
