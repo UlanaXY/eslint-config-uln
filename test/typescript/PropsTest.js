@@ -4,12 +4,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const PropsTest = ({
+PropsTest.propTypes = {
+  type: PropTypes.string,
+  isGrid: PropTypes.bool,
+  children: PropTypes.node.isRequired,
+};
+
+function PropsTest({
   type = 'button',
   isGrid = false,
   children,
   ...otherProps
-}) => {
+}) {
   const data = 'ff';
 
   return (
@@ -24,13 +30,7 @@ const PropsTest = ({
       </span>
     </div>
   );
-};
-
-PropsTest.propTypes = {
-  type: PropTypes.string,
-  isGrid: PropTypes.bool,
-  children: PropTypes.node.isRequired,
-};
+}
 
 
 export default PropsTest;
