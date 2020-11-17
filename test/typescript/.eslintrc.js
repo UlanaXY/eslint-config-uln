@@ -1,11 +1,14 @@
 module.exports = {
   extends: [
-    require.resolve('../../typescript.js')
+    require.resolve('../../typescript.js'),
   ],
+  parserOptions: {
+    project: './test/typescript/tsconfig.json',
+  },
   settings: {
-    "import/resolver": {
-      "alias": {
-        "extensions": [
+    'import/resolver': {
+      alias: {
+        extensions: [
           '.tsx',
           '.ts',
           '.android.tsx',
@@ -16,8 +19,8 @@ module.exports = {
           '.android.js',
           '.ios.js',
           '.web.js',
-        ]
-      }
-    }
+        ],
+      },
+    },
   },
 };

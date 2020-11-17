@@ -1,5 +1,5 @@
 module.exports = {
   extends: [
-    require.resolve('../../index.js')
-  ]
+    require.resolve('../../index.js'),
+  ],
 };

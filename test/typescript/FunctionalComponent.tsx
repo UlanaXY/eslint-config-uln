@@ -1,8 +1,8 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
+// eslint-disable-next-line import/no-extraneous-dependencies, no-use-before-define
 import * as React from 'react';
 
 
-interface IProps {
+interface StandardFunctionalComponentProps {
   children: React.ReactNode,
   page: number,
   pages: number,
@@ -17,7 +17,7 @@ export function StandardFunctionalComponent({
   pages,
   pageSize,
   isLoadingData = true,
-}: IProps) {
+}: StandardFunctionalComponentProps) {
   return (
     <div>
       <span>
@@ -43,8 +43,8 @@ const ArrowComponent = ({
   page,
   pages,
   pageSize,
-  isLoadingData,
-}: IProps) => (
+  isLoadingData = true,
+}: StandardFunctionalComponentProps) => (
   <div>
     <span>
       {page}
