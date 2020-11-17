@@ -6,12 +6,12 @@ eslint-config-wombat
 
     TypeScript only 
     ```bash
-    yarn add -D babel-eslint@~10.0.3 eslint@^6.6.0 @typescript-eslint/eslint-plugin@^3.9.0 @typescript-eslint/parser^3.9.0 eslint-config-wombat
+    yarn add -D babel-eslint@~10.1.0 eslint@^7.5.0 eslint-config-wombat
     ```
     
     JavaScript
     ```bash
-    yarn add -D babel-eslint@~10.0.3 eslint@^6.6.0 eslint-config-wombat
+    yarn add -D babel-eslint@~10.1.0 eslint@^7.5.0 eslint-config-wombat
     ```
     
 2. create/update .eslintrc.js
