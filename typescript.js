@@ -2,11 +2,7 @@
 
 module.exports = {
   extends: [
-    "react-app",
     require.resolve('./base.js'),
-  ],
-  plugins: [
-    "react-hooks",
   ],
   parserOptions: {
     project: './tsconfig.json',

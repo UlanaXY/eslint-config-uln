@@ -2,7 +2,8 @@
 
 module.exports = {
   extends: [
-    'airbnb'
+    "react-app",
+    "airbnb",
   ],
   rules: {
     // todo remove 'ignoreFunctionalComponents' after deprecation of defaultProps in React

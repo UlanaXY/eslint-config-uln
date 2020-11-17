@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies, no-use-before-define
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 interface StandardFunctionalComponentProps {
@@ -18,8 +18,17 @@ export function StandardFunctionalComponent({
   pageSize,
   isLoadingData = true,
 }: StandardFunctionalComponentProps) {
+  const [a, setA] = useState<number>(6);
+
+  useEffect(() => {
+    setA(page);
+  }, [page]);
+
   return (
     <div>
+      <span>
+        {a}
+      </span>
       <span>
         {page}
       </span>

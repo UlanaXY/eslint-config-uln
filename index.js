@@ -10,17 +10,6 @@ module.exports = {
   },
   extends: [
     require.resolve("./base.js"),
-    "airbnb/hooks"
-  ],
-  parserOptions: {
-    "ecmaVersion": 6,
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "sourceType": "module"
-  },
-  plugins: [
-    "react"
   ],
   rules: {
     "react/prop-types": [
