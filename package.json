@@ -16,6 +16,7 @@
   "main": "index.js",
   "scripts": {
     "lint:js": "eslint base.js index.js typescript.js --config .eslintrc.js",
+    "test": "yarn run test:javascript && yarn run test:typescript",
     "test:javascript": "eslint test/javascript --ext .js,.jsx --no-eslintrc --config test/javascript/.eslintrc.js",
     "test:typescript": "eslint test/typescript --ext .js,.jsx,.ts,.tsx --no-eslintrc --config test/typescript/.eslintrc.js",
     "createNewVersion": "np --skip-2fa",
