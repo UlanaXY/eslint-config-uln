@@ -21,6 +21,7 @@ eslint:
   script:
     # Run eslint
     - yarn run lint:js
+  interruptible: true
 
 test:
   stage: test
@@ -28,3 +29,4 @@ test:
   script:
     - yarn run test:javascript
     - yarn run test:typescript
+  interruptible: true

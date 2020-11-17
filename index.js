@@ -1,26 +1,24 @@
-"use strict";
-
 module.exports = {
-  parser: "babel-eslint",
+  parser: 'babel-eslint',
   env: {
-    "browser": true,
-    "commonjs": true,
-    "es6": true,
-    "node": true
+    browser: true,
+    commonjs: true,
+    es6: true,
+    node: true,
   },
   extends: [
-    require.resolve("./base.js"),
+    require.resolve('./base.js'),
   ],
   rules: {
-    "react/prop-types": [
-      "error",
+    'react/prop-types': [
+      'error',
       {
-        "ignore": [
-          ...require.resolve("./ignoredProps.js")
+        ignore: [
+          ...require.resolve('./ignoredProps.js'),
         ],
-        "customValidators": []
-      }
+        customValidators: [],
+      },
     ],
-    "react/jsx-filename-extension": [ "warn", { "extensions": [".js", ".jsx"] }],
-  }
+    'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx'] }],
+  },
 };
