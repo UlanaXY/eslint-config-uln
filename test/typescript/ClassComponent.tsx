@@ -1,4 +1,4 @@
-// eslint-disable-next-line import/no-extraneous-dependencies, no-use-before-define
+// eslint-disable-next-line import/no-extraneous-dependencies
 import * as React from 'react';
 import SimpleComponent from './SimpleComponent';
 

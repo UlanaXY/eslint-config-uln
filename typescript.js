@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   extends: [
     require.resolve('./base.js'),
@@ -24,6 +26,7 @@ module.exports = {
       files: ['**/*.ts?(x)'],
       rules: {
         'no-unused-vars': 'off',
+        'no-use-before-define': 'off',
         '@typescript-eslint/consistent-type-assertions': 'error',
         '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
         '@typescript-eslint/type-annotation-spacing': 'error',
@@ -53,10 +56,11 @@ module.exports = {
   ],
 
   rules: {
+    '@typescript-eslint/no-use-before-define': ['error', { functions: true, classes: true }],
+    '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
     '@typescript-eslint/no-angle-bracket-type-assertion': 'off',
     'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx', '.tsx'] }],
     'react/prop-types': 'error',
-    'no-use-before-define': ['error', { functions: true, classes: true }],
   },
 };
 
