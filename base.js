@@ -5,6 +5,8 @@ module.exports = {
     'airbnb'
   ],
   rules: {
+    // todo remove 'ignoreFunctionalComponents' after deprecation of defaultProps in React
+    "react/require-default-props": ["error", {  ignoreFunctionalComponents: true}],
     "arrow-parens": "off",
     "camelcase": "off",
     "comma-dangle": [ "error", {
@@ -46,7 +48,6 @@ module.exports = {
     "react/jsx-one-expression-per-line": ["error", { "allow": "literal" } ],
     "react/jsx-props-no-spreading": "off",
     "react/prefer-stateless-function": ["off", { "ignorePureComponents": false }],
-    "react/require-default-props": "error",
     "react/state-in-constructor": "off",
     "react/static-property-placement": ["error", "static public field"],
     "semi": ["error", "always"]
