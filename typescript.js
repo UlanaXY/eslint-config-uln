@@ -37,10 +37,15 @@ module.exports = {
       files: ['**/*.ts?(x)'],
       extends: ['plugin:@typescript-eslint/recommended-requiring-type-checking'],
       rules: {
+        // replacements
         'no-unused-vars': 'off',
         'comma-dangle': 'off',
         '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
         '@typescript-eslint/no-use-before-define': ['error', { functions: true, classes: true }],
+        // off
+        '@typescript-eslint/no-unsafe-assignment': 'off',
+        '@typescript-eslint/no-unsafe-member-access': 'off',
+        // rest
         '@typescript-eslint/consistent-type-assertions': 'error',
         '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
         '@typescript-eslint/type-annotation-spacing': 'error',
@@ -78,8 +83,6 @@ module.exports = {
 
   rules: {
     'no-use-before-define': 'off',
-    '@typescript-eslint/no-unsafe-assignment': 'off',
-    '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/no-angle-bracket-type-assertion': 'off',
     'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx', '.tsx'] }],
     'react/prop-types': 'error',
