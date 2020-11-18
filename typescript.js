@@ -8,7 +8,6 @@ module.exports = {
     node: true,
   },
   extends: [
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'airbnb-typescript',
     'airbnb/hooks',
     require.resolve('./base.js'),
@@ -20,13 +19,8 @@ module.exports = {
     {
       files: ['**/*.js?(x)'],
       rules: {
-        '@typescript-eslint/no-unsafe-member-access': 'off',
-        '@typescript-eslint/no-unsafe-assignment': 'off',
-        '@typescript-eslint/restrict-template-expressions': 'off',
-        '@typescript-eslint/no-unsafe-call': 'off',
         '@typescript-eslint/comma-dangle': 'off',
         '@typescript-eslint/no-use-before-define': 'off',
-        '@typescript-eslint/no-unsafe-return': 'off',
         'react/prop-types': [
           'error',
           {
@@ -40,6 +34,7 @@ module.exports = {
     },
     {
       files: ['**/*.ts?(x)'],
+      extends: ['plugin:@typescript-eslint/recommended-requiring-type-checking'],
       rules: {
         'no-unused-vars': 'off',
         '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
