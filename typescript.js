@@ -21,6 +21,7 @@ module.exports = {
       rules: {
         '@typescript-eslint/comma-dangle': 'off',
         '@typescript-eslint/no-use-before-define': 'off',
+        '@typescript-eslint/restrict-plus-operands': 'off',
         'react/prop-types': [
           'error',
           {
@@ -37,6 +38,7 @@ module.exports = {
       extends: ['plugin:@typescript-eslint/recommended-requiring-type-checking'],
       rules: {
         'no-unused-vars': 'off',
+        'comma-dangle': 'off',
         '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
         '@typescript-eslint/no-use-before-define': ['error', { functions: true, classes: true }],
         '@typescript-eslint/consistent-type-assertions': 'error',
@@ -44,6 +46,13 @@ module.exports = {
         '@typescript-eslint/type-annotation-spacing': 'error',
         '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/prefer-nullish-coalescing': 'error',
+        '@typescript-eslint/comma-dangle': ['error', {
+          arrays: 'always-multiline',
+          objects: 'always-multiline',
+          imports: 'always-multiline',
+          exports: 'always-multiline',
+          functions: 'ignore',
+        }],
         '@typescript-eslint/member-delimiter-style': ['error', {
           multiline: {
             delimiter: 'comma',
@@ -69,6 +78,8 @@ module.exports = {
 
   rules: {
     'no-use-before-define': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/no-angle-bracket-type-assertion': 'off',
     'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx', '.tsx'] }],
     'react/prop-types': 'error',
