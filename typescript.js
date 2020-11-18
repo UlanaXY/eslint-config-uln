@@ -21,6 +21,7 @@ module.exports = {
       rules: {
         '@typescript-eslint/comma-dangle': 'off',
         '@typescript-eslint/no-use-before-define': 'off',
+        '@typescript-eslint/semi': 'off',
         '@typescript-eslint/restrict-plus-operands': 'off',
         'react/prop-types': [
           'error',
@@ -46,6 +47,7 @@ module.exports = {
         '@typescript-eslint/no-unsafe-assignment': 'off',
         '@typescript-eslint/no-unsafe-member-access': 'off',
         // rest
+        '@typescript-eslint/semi': ['error', 'always', { omitLastInOneLineBlock: true }],
         '@typescript-eslint/consistent-type-assertions': 'error',
         '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
         '@typescript-eslint/type-annotation-spacing': 'error',

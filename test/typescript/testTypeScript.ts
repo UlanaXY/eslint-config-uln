@@ -11,3 +11,6 @@ export function setCookie(name: string, value: string | number, days: number) {
 if (Math.random() === 12) {
   setCookie('12', 12, 12);
 }
+
+// eslint-disable-next-line no-console
+(() => { console.log() })();
