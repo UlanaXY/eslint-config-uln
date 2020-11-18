@@ -47,6 +47,6 @@ module.exports = {
     'react/prefer-stateless-function': ['off', { ignorePureComponents: false }],
     'react/state-in-constructor': 'off',
     'react/static-property-placement': ['error', 'static public field'],
-    semi: ['error', 'always'],
+    semi: ['error', 'always', { omitLastInOneLineBlock: true }],
   },
 };
