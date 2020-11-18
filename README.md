@@ -29,7 +29,11 @@ eslint-config-wombat
     module.exports = {
       "extends": [
         "wombat/typescript"
-      ]
+      ],
+      "parserOptions": {
+        project: ['./tsconfig.json'],
+        tsconfigRootDir: __dirname,
+      }
     };
 
     ```
