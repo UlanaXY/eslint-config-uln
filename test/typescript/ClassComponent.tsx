@@ -86,6 +86,7 @@ class ServerSideTableContextProvider extends React.PureComponent<IProps, IState>
       ...(additionalHttpGetArgs),
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-floating-promises
     rawFetchData(body)
       .then((responseData: ResponseData) => {
         this.setState({

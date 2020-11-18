@@ -1,10 +1,6 @@
 'use strict';
 
 module.exports = {
-  extends: [
-    'react-app',
-    'airbnb',
-  ],
   rules: {
     // todo remove 'ignoreFunctionalComponents' after deprecation of defaultProps in React
     'react/require-default-props': ['error', { ignoreFunctionalComponents: true }],
@@ -36,7 +32,7 @@ module.exports = {
       components: ['Link'], specialLink: ['to'],
     }],
     'jsx-a11y/click-events-have-key-events': 'off',
-    'linebreak-style': 0,
+    'linebreak-style': 'off',
     'no-control-regex': 'off',
     'no-multiple-empty-lines': ['error', { max: 2 }],
     'no-return-assign': 'off',

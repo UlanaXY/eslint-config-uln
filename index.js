@@ -9,6 +9,8 @@ module.exports = {
     node: true,
   },
   extends: [
+    'airbnb',
+    'airbnb/hooks',
     require.resolve('./base.js'),
   ],
   rules: {

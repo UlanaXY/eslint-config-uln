@@ -1,16 +1,32 @@
 'use strict';
 
 module.exports = {
+  env: {
+    browser: true,
+    commonjs: true,
+    es6: true,
+    node: true,
+  },
   extends: [
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'airbnb-typescript',
+    'airbnb/hooks',
     require.resolve('./base.js'),
   ],
   parserOptions: {
-    project: './tsconfig.json',
+    project: ['./tsconfig.json'],
   },
   overrides: [
     {
       files: ['**/*.js?(x)'],
       rules: {
+        '@typescript-eslint/no-unsafe-member-access': 'off',
+        '@typescript-eslint/no-unsafe-assignment': 'off',
+        '@typescript-eslint/restrict-template-expressions': 'off',
+        '@typescript-eslint/no-unsafe-call': 'off',
+        '@typescript-eslint/comma-dangle': 'off',
+        '@typescript-eslint/no-use-before-define': 'off',
+        '@typescript-eslint/no-unsafe-return': 'off',
         'react/prop-types': [
           'error',
           {
@@ -26,9 +42,8 @@ module.exports = {
       files: ['**/*.ts?(x)'],
       rules: {
         'no-unused-vars': 'off',
-        'no-use-before-define': 'off',
-        '@typescript-eslint/no-use-before-define': ['error', { functions: true, classes: true }],
         '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
+        '@typescript-eslint/no-use-before-define': ['error', { functions: true, classes: true }],
         '@typescript-eslint/consistent-type-assertions': 'error',
         '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
         '@typescript-eslint/type-annotation-spacing': 'error',
@@ -58,6 +73,7 @@ module.exports = {
   ],
 
   rules: {
+    'no-use-before-define': 'off',
     '@typescript-eslint/no-angle-bracket-type-assertion': 'off',
     'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx', '.tsx'] }],
     'react/prop-types': 'error',

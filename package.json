@@ -17,8 +17,8 @@
   "scripts": {
     "lint:js": "eslint base.js index.js typescript.js --config .eslintrc.js",
     "test": "yarn run test:javascript && yarn run test:typescript",
-    "test:javascript": "eslint test/javascript --ext .js,.jsx --no-eslintrc --config test/javascript/.eslintrc.js",
-    "test:typescript": "eslint test/typescript --ext .js,.jsx,.ts,.tsx --no-eslintrc --config test/typescript/.eslintrc.js",
+    "test:javascript": "eslint test/javascript ./test/javascript --ext .js,.jsx --no-eslintrc --config test/javascript/.eslintrc.js",
+    "test:typescript": "eslint test/typescript ./test/typescript --ext .js,.jsx,.ts,.tsx --no-eslintrc --config test/typescript/.eslintrc.js",
     "createNewVersion": "np --skip-2fa",
     "snyk-protect": "snyk protect",
     "prepare": "test -n \"$IS_CI\" || yarn run snyk-protect"
@@ -27,6 +27,7 @@
     "@typescript-eslint/eslint-plugin": "^4.0.0",
     "@typescript-eslint/parser": "^4.0.0",
     "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-loader": "^4.0.2",

@@ -1,10 +1,13 @@
 module.exports = {
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ['./tsconfig.json'],
+  },
   extends: [
     require.resolve('../../typescript.js'),
   ],
-  parserOptions: {
-    project: './test/typescript/tsconfig.json',
-  },
+
   settings: {
     'import/resolver': {
       alias: {

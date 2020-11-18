@@ -1,6 +1,8 @@
+'use strict';
+
 module.exports = {
   extends: [
-    require.resolve('./base.js'),
+    require.resolve('./index.js'),
     'stylelint',
   ],
 };
