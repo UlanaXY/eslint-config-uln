@@ -11,7 +11,7 @@ cache:
     - .yarn/
 
 before_script:
-  - yarn install
+  - yarn install --immutable
 
 stages:
   - test
