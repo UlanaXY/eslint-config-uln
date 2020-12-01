@@ -8,6 +8,7 @@ image: $NODE_CI_IMAGE
 cache:
   paths:
     - node_modules/
+    - .yarn/
 
 before_script:
   - yarn install
@@ -19,7 +20,6 @@ eslint:
   stage: test
 
   script:
-    # Run eslint
     - yarn run lint:js
   interruptible: true
 
