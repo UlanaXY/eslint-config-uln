@@ -16,7 +16,7 @@ eslint-config-wombat
     
 2. create/update .eslintrc.js
     * javascript:
-    ```JS
+    ```js
     module.exports = {
       "extends": [
         "wombat"
@@ -25,7 +25,7 @@ eslint-config-wombat
 
     ```
     * typescript:
-    ```JS
+    ```js
     module.exports = {
       "extends": [
         "wombat/typescript"
@@ -35,7 +35,13 @@ eslint-config-wombat
         tsconfigRootDir: __dirname,
       }
     };
-
+    ```
+3. Add script to package.json 
+    ```js
+    "scripts": {
+      ...
+      "lint:js": "eslint ./src --ext .js,.jsx,.ts,.tsx --max-warnings=0",
+    }  
     ```
    
 ## Publishing
