@@ -81,6 +81,13 @@ module.exports = {
         }],
       },
     },
+    {
+      files: ['**/*.stories.tsx', '**/*.js?(x)'],
+      extends: ['plugin:@typescript-eslint/recommended-requiring-type-checking'],
+      rules: {
+        'import/no-extraneous-dependencies': ['error', { optionalDependencies: false }],
+      },
+    },
   ],
 
   rules: {
