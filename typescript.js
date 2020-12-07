@@ -82,7 +82,12 @@ module.exports = {
       },
     },
     {
-      files: ['**/*.stories.tsx', '**/*.js?(x)'],
+      files: [
+        '**/*.stories.tsx',
+        '**/*.stories.js?(x)',
+        '**/*.test.ts?(x)',
+        '**/*.test.js?(x)',
+      ],
       extends: ['plugin:@typescript-eslint/recommended-requiring-type-checking'],
       rules: {
         'import/no-extraneous-dependencies': ['error', { optionalDependencies: false }],
