@@ -100,6 +100,17 @@ module.exports = {
     '@typescript-eslint/no-angle-bracket-type-assertion': 'off',
     'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx', '.tsx'] }],
     'react/prop-types': 'error',
+    'spaced-comment': ['warn',' "always"', {
+      line: {
+        exceptions: ['-', '+'],
+        markers: ['=', '!', '/'], // space here to support sprockets directives, slash for TS /// comments
+      },
+      block: {
+        exceptions: ['-', '+'],
+        markers: ['=', '!', ':', '::'], // space here to support sprockets directives and flow comment types
+        balanced: true,
+      }
+    }],
   },
 };
 
