@@ -58,6 +58,8 @@ module.exports = {
           objects: 'always-multiline',
           imports: 'always-multiline',
           exports: 'always-multiline',
+          enums: 'always-multiline',
+          tuples: 'always-multiline',
           functions: 'ignore',
         }],
         '@typescript-eslint/member-delimiter-style': ['error', {
