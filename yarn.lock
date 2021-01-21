@@ -3153,7 +3153,7 @@ __metadata:
     prop-types: ^15.7.2
     react: ^16.8.23
     snyk: ^1.369.3
-    typescript: ~3.7.2
+    typescript: ~4.0.0
     webpack: ^4.43.0
   peerDependencies:
     babel-eslint: ~10.1.0
@@ -9416,23 +9416,23 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@~3.7.2#builtin<compat/typescript>":
-  version: 3.7.5
-  resolution: "typescript@patch:typescript@npm%3A3.7.5#builtin<compat/typescript>::version=3.7.5&hash=cc6730"
+"typescript@patch:typescript@~4.0.0#builtin<compat/typescript>":
+  version: 4.0.5
+  resolution: "typescript@patch:typescript@npm%3A4.0.5#builtin<compat/typescript>::version=4.0.5&hash=cc6730"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: cf3413606dfe8a8c8e08392afe1f52975541b900ad407bc072279ad27b57ce4939eac389e74477bb0f8747122cf3442b944023ddfd87143d3b9ea3122fff40ad
+  checksum: ada6fea7657a51d1b842682d31233e53a3cf509b0edbd6288fda3cfd01643d0190b7ea77837527c4d282c90e61690e19dbfd91be6913e7e7292aa0b588d3506c
   languageName: node
   linkType: hard
 
-typescript@~3.7.2:
-  version: 3.7.5
-  resolution: "typescript@npm:3.7.5"
+typescript@~4.0.0:
+  version: 4.0.5
+  resolution: "typescript@npm:4.0.5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 48a96fb7dc48746e6b76cf0946545181b0d5013368e510768402f1374e6c6a9f29b00e8ca4f40bc7523a655473f7bc7c55d1c8458970e96b7187bcee1b47e96b
+  checksum: ce94d4bbb914cc9d6fbd42e1476ab18c3292b262b8ba7ba76cd167a858545207a604e75bf1efbb75b8654c8f85deaa19795c3ef00098d7612855139b4ecc0240
   languageName: node
   linkType: hard
 
