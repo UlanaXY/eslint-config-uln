@@ -41,6 +41,7 @@ module.exports = {
         // replacements
         'no-unused-vars': 'off',
         'comma-dangle': 'off',
+        'semi': 'off', // eslint-disable-line quote-props
         '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
         '@typescript-eslint/no-use-before-define': ['error', { functions: true, classes: true }],
         // off
@@ -102,7 +103,7 @@ module.exports = {
     '@typescript-eslint/no-angle-bracket-type-assertion': 'off',
     'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx', '.tsx'] }],
     'react/prop-types': 'error',
-    'spaced-comment': ['warn',' "always"', {
+    'spaced-comment': ['warn', 'always', {
       line: {
         exceptions: ['-', '+'],
         markers: ['=', '!', '/'], // space here to support sprockets directives, slash for TS /// comments
@@ -111,7 +112,7 @@ module.exports = {
         exceptions: ['-', '+'],
         markers: ['=', '!', ':', '::'], // space here to support sprockets directives and flow comment types
         balanced: true,
-      }
+      },
     }],
   },
 };
