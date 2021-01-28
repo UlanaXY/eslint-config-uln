@@ -27,6 +27,10 @@ module.exports = {
       ],
     }],
     'import/prefer-default-export': 'off',
+    'import/order': [
+      'warn',
+      { groups: ['external', 'builtin', 'internal', 'index', 'parent', 'sibling', 'object'] },
+    ],
     indent: ['error', 2, { SwitchCase: 1 }],
     'jsx-a11y/anchor-is-valid': ['error', {
       components: ['Link'], specialLink: ['to'],
