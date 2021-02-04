@@ -11,7 +11,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/CommonWombat_Team/Public-Projects/cw-internal-eslintConfigCw.git"
+    "url": "https://gitlab.com/CommonWombat/public-projects/cw-eslintConfig-config.git"
   },
   "main": "index.js",
   "scripts": {
