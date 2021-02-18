@@ -89,6 +89,8 @@ module.exports = {
   rules: {
     'no-use-before-define': 'off',
     '@typescript-eslint/no-angle-bracket-type-assertion': 'off',
+    '@typescript-eslint/no-floating-promises': ['error', { ignoreVoid: true, ignoreIIFE: true }],
+    'no-void': ['error', { allowAsStatement: true }],
     'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx', '.tsx'] }],
     'react/prop-types': 'error',
     'spaced-comment': ['warn', 'always', {
