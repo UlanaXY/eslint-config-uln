@@ -20,6 +20,8 @@ eslint-config-wombat
     module.exports = {
       "extends": [
         "wombat"
+      ],
+      "ignorePatterns": [
       ]
     };
 
@@ -33,7 +35,9 @@ eslint-config-wombat
       "parserOptions": {
         project: ['./tsconfig.json'],
         tsconfigRootDir: __dirname,
-      }
+      },
+      "ignorePatterns": [
+      ]
     };
     ```
 3. Add script to package.json 
