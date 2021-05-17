@@ -57,4 +57,7 @@ module.exports = {
     'react/static-property-placement': ['error', 'static public field'],
     semi: ['error', 'always', { omitLastInOneLineBlock: true }],
   },
+  ignorePatterns: [
+    '**/.eslintrc.js',
+  ],
 };

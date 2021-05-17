@@ -13,9 +13,9 @@
     "type": "git",
     "url": "https://gitlab.com/CommonWombat/public-projects/cw-eslintConfig-config.git"
   },
-  "main": "index.js",
+  "main": "typescript.js",
   "scripts": {
-    "lint:js": "eslint base.js index.js typescript.js --config .eslintrc.js",
+    "lint:js": "eslint base.js javascript.js typescript.js --config .eslintrc.js",
     "test": "yarn run test:javascript && yarn run test:typescript",
     "test:javascript": "eslint test/javascript ./test/javascript --ext .js,.jsx --no-eslintrc --config test/javascript/.eslintrc.js",
     "test:typescript": "eslint test/typescript ./test/typescript --ext .js,.jsx,.ts,.tsx --no-eslintrc --config test/typescript/.eslintrc.js",
@@ -39,7 +39,9 @@
   },
   "devDependencies": {
     "@types/react": "^16.9.35",
-    "babel-eslint": "~10.1.0",
+    "@babel/core": "^7.10.0",
+    "@babel/eslint-parser": "^7.10.0",
+    "@babel/preset-react": "^7.13.13",
     "eslint": "^7.5.0",
     "eslint-config-stylelint": "^11.0.0",
     "np": "^7.2.0",
@@ -50,7 +52,8 @@
     "webpack": "^4.43.0"
   },
   "peerDependencies": {
-    "babel-eslint": "~10.1.0",
+    "@babel/core": "^7.10.0",
+    "@babel/eslint-parser": "^7.10.0",
     "eslint": "^7.5.0"
   },
   "snyk": true

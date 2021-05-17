@@ -104,9 +104,6 @@ module.exports = {
         balanced: true,
       },
     }],
-  },
-  ignorePatterns: [
-    '**/.eslintrc.js',
-  ],
+  }
 };
 
