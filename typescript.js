@@ -104,6 +104,6 @@ module.exports = {
         balanced: true,
       },
     }],
-  }
+  },
 };
 
