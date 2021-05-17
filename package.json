@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-wombat",
-  "version": "4.2.0",
+  "version": "5.0.0",
   "description": "Recommended Common Wombat config for eslint",
   "keywords": [
     "eselint",
@@ -38,10 +38,10 @@
     "eslint-plugin-react-hooks": "^4.0.8"
   },
   "devDependencies": {
-    "@types/react": "^16.9.35",
     "@babel/core": "^7.10.0",
     "@babel/eslint-parser": "^7.10.0",
     "@babel/preset-react": "^7.13.13",
+    "@types/react": "^16.9.35",
     "eslint": "^7.5.0",
     "eslint-config-stylelint": "^11.0.0",
     "np": "^7.2.0",
