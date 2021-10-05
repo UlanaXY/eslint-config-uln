@@ -1,17 +1,17 @@
 {
-  "name": "eslint-config-wombat",
+  "name": "eslint-config-uln",
   "version": "5.0.0",
-  "description": "Recommended Common Wombat config for eslint",
+  "description": "Recommended UlanaXY config for eslint",
   "keywords": [
     "eselint",
     "eslint-config",
     "recommended"
   ],
-  "author": "Common Wombat",
+  "author": "ulanaXY",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/CommonWombat/public-projects/cw-eslintConfig-config.git"
+    "url": "https://github.com/UlanaXY/eslint-config-uln"
   },
   "main": "typescript.js",
   "scripts": {
@@ -19,7 +19,6 @@
     "test": "yarn run test:javascript && yarn run test:typescript",
     "test:javascript": "eslint test/javascript ./test/javascript --ext .js,.jsx --no-eslintrc --config test/javascript/.eslintrc.js",
     "test:typescript": "eslint test/typescript ./test/typescript --ext .js,.jsx,.ts,.tsx --no-eslintrc --config test/typescript/.eslintrc.js",
-    "createNewVersion": "np --skip-2fa",
     "snyk-protect": "snyk protect",
     "prepare": "test -n \"$IS_CI\" || yarn run snyk-protect"
   },
@@ -43,7 +42,6 @@
     "@types/react": "^16.9.35",
     "eslint": "^7.5.0",
     "eslint-config-stylelint": "^11.0.0",
-    "np": "^7.5.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.23",
     "typescript": "~4.0.0",
