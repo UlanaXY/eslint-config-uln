@@ -4,7 +4,6 @@ module.exports = {
   rules: {
     // todo remove 'ignoreFunctionalComponents' after deprecation of defaultProps in React
     'react/require-default-props': ['error', { ignoreFunctionalComponents: true }],
-    // camelcase: 'off',
     'comma-dangle': ['error', {
       arrays: 'always-multiline',
       objects: 'always-multiline',

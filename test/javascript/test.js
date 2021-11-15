@@ -149,7 +149,7 @@ export default class CookiesConsent extends React.Component {
     }
 
     cookiesConfig.forEach(({ cookies }) => {
-      cookies.forEach(cookie => {
+      cookies.forEach((cookie) => {
         if (loadedCookies[cookie] === undefined) {
           shouldShowInfo = true;
           // console.log(' to jest undef', cookie);
@@ -174,10 +174,10 @@ export default class CookiesConsent extends React.Component {
   hideModal = () => this.setState({ showConfigModal: false });
 
   // areThisCookiesAllowed = cookies => false;
-  areThisCookiesAllowed = cookies => {
+  areThisCookiesAllowed = (cookies) => {
     let allowed = true;
     const { acceptedCookies } = this.state;
-    cookies.forEach(cookie => {
+    cookies.forEach((cookie) => {
       if (!acceptedCookies[cookie]) {
         allowed = false;
       }
@@ -218,7 +218,7 @@ export default class CookiesConsent extends React.Component {
     const newCookies = {};
     // console.log(shouldBeAllowed);
 
-    cookies.forEach(cookie => newCookies[cookie] = shouldBeAllowed);
+    cookies.forEach((cookie) => { newCookies[cookie] = shouldBeAllowed });
     this.setState({
       acceptedCookies: {
         ...acceptedCookies,
@@ -294,7 +294,6 @@ export default class CookiesConsent extends React.Component {
     const { translation, editSettingsMode } = this.props;
     const { showCookieBar, showConfigModal } = this.state;
 
-    const test_camel_case = '12';
 
     return (
       <>
@@ -304,9 +303,6 @@ export default class CookiesConsent extends React.Component {
             <div className="content">
               <div className="info">
                 {translation.cookieBar.infoText}
-              </div>
-              <div className="info">
-                {test_camel_case}
               </div>
               <div className="buttons">
                 <Button
