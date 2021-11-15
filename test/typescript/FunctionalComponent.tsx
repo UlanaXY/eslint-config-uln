@@ -11,13 +11,13 @@ interface StandardFunctionalComponentProps {
 }
 
 
-export function StandardFunctionalComponent({
+export const StandardFunctionalComponent = ({
   children,
   page,
   pages,
   pageSize,
   isLoadingData = true,
-}: StandardFunctionalComponentProps) {
+}: StandardFunctionalComponentProps) => {
   const [a, setA] = useState<number>(6);
 
   useEffect(() => {
@@ -44,7 +44,7 @@ export function StandardFunctionalComponent({
       {children}
     </div>
   );
-}
+};
 
 
 const ArrowComponent = ({

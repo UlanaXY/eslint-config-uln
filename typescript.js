@@ -14,8 +14,9 @@ module.exports = {
     'react-hooks',
   ],
   extends: [
-    'airbnb-typescript',
+    'airbnb',
     'airbnb/hooks',
+    'airbnb-typescript',
     require.resolve('./base.js'),
   ],
   parserOptions: {

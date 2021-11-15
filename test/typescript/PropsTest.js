@@ -10,12 +10,12 @@ PropsTest.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-function PropsTest({
+const PropsTest = ({
   type = 'button',
   isGrid = false,
   children,
   ...otherProps
-}) {
+}) => {
   const data = 'ff';
 
   return (
@@ -30,7 +30,7 @@ function PropsTest({
       </span>
     </div>
   );
-}
+};
 
 
 export default PropsTest;
