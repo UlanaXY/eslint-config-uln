@@ -141,7 +141,7 @@ export default class CookiesConsent extends React.Component {
     }
 
     cookiesConfig.forEach(({ cookies }) => {
-      cookies.forEach(cookie => {
+      cookies.forEach((cookie) => {
         if (loadedCookies[cookie] === undefined) {
           shouldShowInfo = true;
           // console.log(' to jest undef', cookie);
@@ -166,10 +166,10 @@ export default class CookiesConsent extends React.Component {
   hideModal = () => this.setState({ showConfigModal: false });
 
   // areThisCookiesAllowed = cookies => false;
-  areThisCookiesAllowed = cookies => {
+  areThisCookiesAllowed = (cookies) => {
     let allowed = true;
     const { acceptedCookies } = this.state;
-    cookies.forEach(cookie => {
+    cookies.forEach((cookie) => {
       if (!acceptedCookies[cookie]) {
         allowed = false;
       }
@@ -210,7 +210,7 @@ export default class CookiesConsent extends React.Component {
     const newCookies = {};
     // console.log(shouldBeAllowed);
 
-    cookies.forEach(cookie => newCookies[cookie] = shouldBeAllowed);
+    cookies.forEach((cookie) => { newCookies[cookie] = shouldBeAllowed });
     this.setState({
       acceptedCookies: {
         ...acceptedCookies,

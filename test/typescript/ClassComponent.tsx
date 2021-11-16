@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import * as React from 'react';
+import React from 'react';
 import SimpleComponent from './SimpleComponent';
 
 
@@ -120,6 +120,7 @@ class ServerSideTableContextProvider extends React.PureComponent<IProps, IState>
       additionalHttpGetArgs,
     } = this.state;
 
+    // eslint-disable-next-line react/jsx-no-constructed-context-values
     const value = {
       data,
       page,

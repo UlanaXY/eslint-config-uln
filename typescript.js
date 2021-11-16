@@ -7,9 +7,16 @@ module.exports = {
     es6: true,
     node: true,
   },
+  plugins: [
+    'import',
+    'jsx-a11y',
+    'react',
+    'react-hooks',
+  ],
   extends: [
-    'airbnb-typescript',
+    'airbnb',
     'airbnb/hooks',
+    'airbnb-typescript',
     require.resolve('./base.js'),
   ],
   parserOptions: {

@@ -1,4 +1,4 @@
-eslint-config-wombat
+eslint-config-uln
 ================
 
 ## Installation
@@ -6,12 +6,12 @@ eslint-config-wombat
 
     TypeScript only 
     ```bash
-    yarn add -D babel-eslint@~10.1.0 eslint@^7.5.0 eslint-config-wombat
+    yarn add -D babel-eslint@~10.1.0 eslint@^7.5.0 eslint-config-uln
     ```
     
     JavaScript
     ```bash
-    yarn add -D babel-eslint@~10.1.0 eslint@^7.5.0 eslint-config-wombat
+    yarn add -D babel-eslint@~10.1.0 eslint@^7.5.0 eslint-config-uln
     ```
     
 2. create/update .eslintrc.js
@@ -19,7 +19,7 @@ eslint-config-wombat
     ```js
     module.exports = {
       "extends": [
-        "wombat"
+        "uln"
       ],
       "ignorePatterns": [
       ]
@@ -30,7 +30,7 @@ eslint-config-wombat
     ```js
     module.exports = {
       "extends": [
-        "wombat/typescript"
+        "uln/typescript"
       ],
       "parserOptions": {
         project: ['./tsconfig.json'],
@@ -41,9 +41,8 @@ eslint-config-wombat
     };
     ```
 3. Add script to package.json 
-    ```js
+    ```json
     "scripts": {
-      ...
       "lint:js": "eslint ./src --ext .js,.jsx,.ts,.tsx --max-warnings=0",
     }  
     ```
