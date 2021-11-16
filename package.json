@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-uln",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "description": "Recommended UlanaXY config for eslint",
   "keywords": [
     "eselint",

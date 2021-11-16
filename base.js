@@ -31,7 +31,15 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'import/order': [
       'warn',
-      { groups: ['external', 'builtin', 'internal', 'parent', 'sibling', 'index', 'object'] },
+      {
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+        pathGroups: [
+          {
+            pattern: '@/**',
+            group: 'internal',
+          },
+        ],
+      },
     ],
 
     indent: ['error', 2, { SwitchCase: 1 }],
