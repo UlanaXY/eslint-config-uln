@@ -55,7 +55,6 @@ module.exports = {
     }],
     'react/jsx-one-expression-per-line': ['error', { allow: 'literal' }],
     'react/jsx-props-no-spreading': 'off',
-    // 'react/prefer-stateless-function': ['off', { ignorePureComponents: false }],
     'react/state-in-constructor': 'off',
     'react/static-property-placement': ['error', 'static public field'],
     semi: ['error', 'always', { omitLastInOneLineBlock: true }],
