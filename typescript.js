@@ -16,20 +16,12 @@ module.exports = {
   extends: [
     'airbnb',
     'airbnb/hooks',
-    'airbnb-typescript',
     require.resolve('./base.js'),
   ],
-  parserOptions: {
-    project: ['./tsconfig.json'],
-  },
   overrides: [
     {
       files: ['**/*.js?(x)'],
       rules: {
-        '@typescript-eslint/comma-dangle': 'off',
-        '@typescript-eslint/no-use-before-define': 'off',
-        '@typescript-eslint/semi': 'off',
-        '@typescript-eslint/restrict-plus-operands': 'off',
         'react/prop-types': [
           'error',
           {
@@ -43,7 +35,13 @@ module.exports = {
     },
     {
       files: ['**/*.ts?(x)'],
-      extends: ['plugin:@typescript-eslint/recommended-requiring-type-checking'],
+      parserOptions: {
+        project: ['./tsconfig.json'],
+      },
+      extends: [
+        'airbnb-typescript',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+      ],
       rules: {
         // replacements
         'no-unused-vars': 'off',
