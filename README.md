@@ -50,7 +50,7 @@ eslint-config-uln
 ## Publishing
 1. Be repo Maintainer.
 2. Merging branch develop to master via Merge Request.
-3. Switch locally to master branch
+3. Switch locally to main branch
 4. run `yarn run createNewVersion`
 5. Select new version
 6. after publication is completed make sure that everything is pushed to gitlab
