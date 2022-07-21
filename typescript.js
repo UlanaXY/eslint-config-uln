@@ -39,7 +39,7 @@ module.exports = {
         project: ['./tsconfig.json'],
       },
       extends: [
-        'airbnb-typescript',
+        'eslint-config-airbnb-typescript',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
       ],
       rules: {

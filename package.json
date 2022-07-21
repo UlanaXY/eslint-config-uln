@@ -18,9 +18,7 @@
     "lint:js": "eslint base.js javascript.js typescript.js --config .eslintrc.js",
     "test": "yarn run test:javascript && yarn run test:typescript",
     "test:javascript": "eslint test/javascript ./test/javascript --ext .js,.jsx --no-eslintrc --config test/javascript/.eslintrc.js",
-    "test:typescript": "eslint test/typescript ./test/typescript --ext .js,.jsx,.ts,.tsx --no-eslintrc --config test/typescript/.eslintrc.js",
-    "snyk-protect": "snyk protect",
-    "prepare": "test -n \"$IS_CI\" || yarn run snyk-protect"
+    "test:typescript": "eslint test/typescript ./test/typescript --ext .js,.jsx,.ts,.tsx --no-eslintrc --config test/typescript/.eslintrc.js"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.5.0",
