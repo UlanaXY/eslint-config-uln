@@ -18,7 +18,7 @@ const PropsTest = ({
 }) => (
   <div
     type={type}
-    style={{ display: isGrid && 'grid'}}
+    style={{ display: isGrid && 'grid' }}
     {...otherProps}
   >
     <span className="redButtonTitle">
