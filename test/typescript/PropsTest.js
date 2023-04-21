@@ -15,22 +15,17 @@ const PropsTest = ({
   isGrid = false,
   children,
   ...otherProps
-}) => {
-  const data = 'ff';
-
-  return (
-    <div
-      backgroundimage={data.redButtonSvg.publicURL}
-      type={type}
-      isGrid={isGrid}
-      {...otherProps}
-    >
-      <span className="redButtonTitle">
-        {children}
-      </span>
-    </div>
-  );
-};
+}) => (
+  <div
+    type={type}
+    style={{ display: isGrid && 'grid'}}
+    {...otherProps}
+  >
+    <span className="redButtonTitle">
+      {children}
+    </span>
+  </div>
+);
 
 
 export default PropsTest;

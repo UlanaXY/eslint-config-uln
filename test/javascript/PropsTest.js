@@ -9,22 +9,18 @@ const PropsTest = ({
   isGrid = false,
   children,
   ...otherProps
-}) => {
-  const data = 'ff';
+}) => (
+  <div
+    type={type}
+    style={{ display: isGrid && 'grid' }}
+    {...otherProps}
+  >
+    <span className="redButtonTitle">
+      {children}
+    </span>
+  </div>
+);
 
-  return (
-    <div
-      backgroundimage={data.redButtonSvg.publicURL}
-      type={type}
-      isGrid={isGrid}
-      {...otherProps}
-    >
-      <span className="redButtonTitle">
-        {children}
-      </span>
-    </div>
-  );
-};
 
 PropsTest.propTypes = {
   type: PropTypes.string,
