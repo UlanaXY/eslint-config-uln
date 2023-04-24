@@ -53,4 +53,5 @@ eslint-config-uln
 3. Switch locally to main branch
 4. run `npm publish`
 6. after publication is completed make sure that everything is pushed to git
-8. done
+8. merge main to develop
+9. done
