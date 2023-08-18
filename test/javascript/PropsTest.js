@@ -10,13 +10,11 @@ const PropsTest = ({
   children,
   ...otherProps
 }) => {
-  const data = 'ff';
-
+  // eslint-disable-next-line no-console
+  console.log(isGrid);
   return (
     <div
-      backgroundimage={data.redButtonSvg.publicURL}
       type={type}
-      isGrid={isGrid}
       {...otherProps}
     >
       <span className="redButtonTitle">

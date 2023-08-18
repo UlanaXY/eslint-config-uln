@@ -50,6 +50,7 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
         '@typescript-eslint/no-use-before-define': ['error', { functions: true, classes: true }],
         // off
+        '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/no-unsafe-assignment': 'off',
         '@typescript-eslint/no-unsafe-member-access': 'off',
         // rest

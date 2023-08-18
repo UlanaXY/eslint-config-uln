@@ -94,7 +94,7 @@ export function areThisCookiesAllowed(cookies) {
  *  if flag 'editSettingsMode' is true, then componet will render setting button instead of cookibar
  *
  */
-export default class CookiesConsent extends React.Component {
+class CookiesConsent extends React.Component {
   static propTypes = {
     translation: PropTypes.shape({
       cookieBar: PropTypes.shape({
@@ -354,3 +354,5 @@ export default class CookiesConsent extends React.Component {
     );
   }
 }
+
+export default CookiesConsent;
