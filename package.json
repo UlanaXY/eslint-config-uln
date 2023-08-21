@@ -17,6 +17,7 @@
     "node": ">=12.0.0"
   },
   "main": "typescript.js",
+  "packageManager": "yarn@3.6.2",
   "scripts": {
     "lint:js": "eslint base.js javascript.js typescript.js --config .eslintrc.js",
     "test": "yarn run test:javascript && yarn run test:typescript",
@@ -52,6 +53,5 @@
     "@babel/eslint-parser": "^7.22.10",
     "eslint": "8.47.0"
   },
-  "snyk": true,
-  "packageManager": "yarn@3.6.2"
+  "snyk": true
 }
