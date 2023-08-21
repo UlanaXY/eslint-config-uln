@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-uln",
-  "version": "5.3.0",
+  "version": "5.4.0",
   "description": "Recommended UlanaXY config for eslint",
   "keywords": [
     "eselint",
@@ -13,7 +13,11 @@
     "type": "git",
     "url": "https://github.com/UlanaXY/eslint-config-uln"
   },
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "main": "typescript.js",
+  "packageManager": "yarn@3.6.2",
   "scripts": {
     "lint:js": "eslint base.js javascript.js typescript.js --config .eslintrc.js",
     "test": "yarn run test:javascript && yarn run test:typescript",
@@ -21,33 +25,33 @@
     "test:typescript": "eslint test/typescript ./test/typescript --ext .js,.jsx,.ts,.tsx --no-eslintrc --config test/typescript/.eslintrc.js"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.58.0",
-    "@typescript-eslint/parser": "^5.58.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-react-app": "^6.0.0",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-react-app": "^7.0.1",
     "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react": "~7.32.0",
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.4",
-    "@babel/eslint-parser": "^7.21.3",
-    "@babel/preset-react": "^7.18.6",
-    "@types/react": "18.0.25",
-    "eslint": "^8.27.0",
+    "@babel/core": "^7.22.10",
+    "@babel/eslint-parser": "^7.22.10",
+    "@babel/preset-react": "^7.22.5",
+    "@types/react": "^18.2.20",
+    "eslint": "8.47.0",
     "eslint-config-stylelint": "^11.1.0",
     "prop-types": "^15.8.1",
-    "react": "18.2.0",
-    "typescript": "4.9.3",
+    "react": "^18.2.0",
+    "typescript": "^5.1.6",
     "webpack": "^4.43.0"
   },
   "peerDependencies": {
-    "@babel/core": "^7.21.4",
-    "@babel/eslint-parser": "^7.21.3",
-    "eslint": "^8.27.0"
+    "@babel/core": "^7.22.10",
+    "@babel/eslint-parser": "^7.22.10",
+    "eslint": "8.47.0"
   },
   "snyk": true
 }

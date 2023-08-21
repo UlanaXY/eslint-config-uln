@@ -9,18 +9,20 @@ const PropsTest = ({
   isGrid = false,
   children,
   ...otherProps
-}) => (
-  <div
-    type={type}
-    style={{ display: isGrid && 'grid' }}
-    {...otherProps}
-  >
-    <span className="redButtonTitle">
-      {children}
-    </span>
-  </div>
-);
-
+}) => {
+  // eslint-disable-next-line no-console
+  console.log(isGrid);
+  return (
+    <div
+      type={type}
+      {...otherProps}
+    >
+      <span className="redButtonTitle">
+        {children}
+      </span>
+    </div>
+  );
+};
 
 PropsTest.propTypes = {
   type: PropTypes.string,
