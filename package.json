@@ -17,7 +17,7 @@
     "node": ">=12.0.0"
   },
   "main": "typescript.js",
-  "packageManager": "yarn@3.6.2",
+  "packageManager": "yarn@4.1.0",
   "scripts": {
     "lint:js": "eslint base.js javascript.js typescript.js --config .eslintrc.js",
     "test": "yarn run test:javascript && yarn run test:typescript",
