@@ -2,9 +2,13 @@
 
 module.exports = {
   extends: [
-    require.resolve('./javascript.js'),
-    'stylelint',
+    require.resolve('./src/typescript.js'),
+
   ],
-  ignorePatterns: [
-  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ['./tsconfig.json'],
+  },
+  ignorePatterns: [],
 };
