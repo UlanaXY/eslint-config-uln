@@ -6,7 +6,7 @@ eslint-config-uln
     ```bash
     yarn add -D babel-eslint@~10.1.0 eslint@^7.5.0 eslint-config-uln
     ```
-2. create/update .eslintrc.js
+2. create/update eslint.config.mjs
     ```js
     module.exports = {
       "extends": [
