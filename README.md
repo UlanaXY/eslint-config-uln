@@ -3,30 +3,10 @@ eslint-config-uln
 
 ## Installation
 1. Installation
-
-    TypeScript only 
     ```bash
     yarn add -D babel-eslint@~10.1.0 eslint@^7.5.0 eslint-config-uln
     ```
-    
-    JavaScript
-    ```bash
-    yarn add -D babel-eslint@~10.1.0 eslint@^7.5.0 eslint-config-uln
-    ```
-    
 2. create/update .eslintrc.js
-    * javascript:
-    ```js
-    module.exports = {
-      "extends": [
-        "uln"
-      ],
-      "ignorePatterns": [
-      ]
-    };
-
-    ```
-    * typescript:
     ```js
     module.exports = {
       "extends": [
