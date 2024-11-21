@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-uln",
   "version": "5.4.0",
-  "description": "Recommended UlanaXY config for eslint",
+  "description": "UlanaXY's recommended config for eslint",
   "keywords": [
     "eselint",
     "eslint-config",
@@ -31,7 +31,6 @@
     "@typescript-eslint/parser": "^7.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^18.0.0",
-    "eslint-config-react-app": "^7.0.1",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
@@ -43,7 +42,6 @@
   "devDependencies": {
     "@types/react": "^18.3.12",
     "eslint": "^8.57.0",
-    "eslint-config-stylelint": "^11.1.0",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "typescript": "~5.5.2"
