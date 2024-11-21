@@ -6,24 +6,20 @@ eslint-config-uln
     ```bash
     yarn add -D babel-eslint@~10.1.0 eslint@^7.5.0 eslint-config-uln
     ```
-2. create/update .eslintrc.js
+2. create/update eslint.config.mjs
     ```js
-    module.exports = {
-      "extends": [
-        "uln/typescript"
-      ],
-      "parserOptions": {
-        project: ['./tsconfig.json'],
-        tsconfigRootDir: __dirname,
-      },
-      "ignorePatterns": [
-      ]
-    };
+    import ulnConfig from 'eslint-config-uln';
+   
+   
+    /** @type {import('eslint').Linter.Config[]} */
+    export default [
+      ...ulnConfig,
+    ]
     ```
 3. Add script to package.json 
     ```json
     "scripts": {
-      "lint:js": "eslint ./src --ext .js,.jsx,.ts,.tsx --max-warnings=0",
+      "lint:js": "eslint ./src  --max-warnings=0",
     }  
     ```
    
