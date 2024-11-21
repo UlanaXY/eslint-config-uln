@@ -14,6 +14,14 @@ eslint-config-uln
     /** @type {import('eslint').Linter.Config[]} */
     export default [
       ...ulnConfig,
+      {
+        languageOptions: {
+          parserOptions: {
+            project: true,
+            tsconfigRootDir: import.meta.dirname,
+          },
+        },
+      },
     ]
     ```
 3. Add script to package.json 
