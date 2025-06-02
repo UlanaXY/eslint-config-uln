@@ -92,7 +92,8 @@ export default tseslint.config(
       semi: ['error', 'always', { omitLastInOneLineBlock: true }],
       '@typescript-eslint/no-angle-bracket-type-assertion': 'off',
       '@typescript-eslint/no-floating-promises': ['error', { ignoreVoid: true, ignoreIIFE: true }],
-      '@typescript-eslint/semi': ['error', 'always', { omitLastInOneLineBlock: true }],
+      // '@typescript-eslint/semi': ['error', 'never'],
+      '@typescript-eslint/semi': 'off',
       'no-void': ['error', { allowAsStatement: true }],
       // todo remove 'ignoreFunctionalComponents' after deprecation of defaultProps in React
       'react/require-default-props': ['error', { ignoreFunctionalComponents: true }],
@@ -102,6 +103,7 @@ export default tseslint.config(
       'react/static-property-placement': ['error', 'static public field'],
       'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx', '.tsx'] }],
       'react/prop-types': 'error',
+      'react/react-in-jsx-scope': 'off',
       'react/function-component-definition': ['error', {
         namedComponents: 'arrow-function',
         unnamedComponents: 'arrow-function',
@@ -145,8 +147,8 @@ export default tseslint.config(
       // replacements
       'no-unused-vars': 'off',
       'comma-dangle': 'off',
+      'no-use-before-define': 'off',
       'semi': 'off', // eslint-disable-line quote-props
-      // '@react/require-default-props': 'off',
       '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
       '@typescript-eslint/no-use-before-define': ['error', { functions: true, classes: true }],
       // off
